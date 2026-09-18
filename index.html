@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="แหล่งข้อมูลอ้างอิงโครงงานวิทยาศาสตร์เรื่องลิปบาล์ม">
+  <title>แหล่งข้อมูลอ้างอิงโครงงานลิปบาล์ม</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand-mark">LB</div>
+      <p class="eyebrow">SCIENCE PROJECT • REFERENCE HUB</p>
+      <h1>แหล่งข้อมูลอ้างอิงโครงงานลิปบาล์ม</h1>
+      <p class="subtitle">รวมเอกสาร งานวิจัย และบทความที่เกี่ยวข้องกับวัตถุดิบในการผลิตลิปบาล์ม</p>
+
+      <div class="search-wrap">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="ค้นหาชื่อเรื่อง แหล่งข้อมูล หรือหัวข้อ..." aria-label="ค้นหาแหล่งข้อมูล">
+        <button id="clearSearch" class="clear-btn" type="button" aria-label="ล้างการค้นหา">×</button>
+      </div>
+
+      <nav class="filters" aria-label="กรองหมวดหมู่">
+        <button class="filter active" data-filter="all">ทั้งหมด <span>15</span></button>
+        <button class="filter" data-filter="wax">2.1 ขี้ผึ้ง <span>5</span></button>
+        <button class="filter" data-filter="petrolatum">2.2 ปิโตรเลียมเจลลี่ <span>5</span></button>
+        <button class="filter" data-filter="coconut">2.3 น้ำมันมะพร้าว <span>5</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="category" data-category="wax">
+      <div class="category-head">
+        <div class="category-icon wax-icon">🕯️</div>
+        <div>
+          <p class="category-number">หมวด 2.1</p>
+          <h2>ขี้ผึ้ง</h2>
+        </div>
+        <span class="count-badge">5 แหล่งข้อมูล</span>
+      </div>
+      <div class="cards" id="waxCards"></div>
+    </section>
+
+    <section class="category" data-category="petrolatum">
+      <div class="category-head">
+        <div class="category-icon jar-icon">🫙</div>
+        <div>
+          <p class="category-number">หมวด 2.2</p>
+          <h2>ปิโตรเลียมเจลลี่</h2>
+        </div>
+        <span class="count-badge">5 แหล่งข้อมูล</span>
+      </div>
+      <div class="cards" id="petrolatumCards"></div>
+    </section>
+
+    <section class="category" data-category="coconut">
+      <div class="category-head">
+        <div class="category-icon coconut-icon">🥥</div>
+        <div>
+          <p class="category-number">หมวด 2.3</p>
+          <h2>น้ำมันมะพร้าว</h2>
+        </div>
+        <span class="count-badge">5 แหล่งข้อมูล</span>
+      </div>
+      <div class="cards" id="coconutCards"></div>
+    </section>
+
+    <div id="noResults" class="no-results" hidden>
+      <div class="no-results-icon">⌕</div>
+      <h2>ไม่พบแหล่งข้อมูล</h2>
+      <p>ลองค้นหาด้วยคำอื่น หรือเลือกหมวด “ทั้งหมด”</p>
+    </div>
+  </main>
+
+  <button id="backTop" class="back-top" type="button" aria-label="กลับขึ้นด้านบน">↑</button>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-title">แหล่งข้อมูลอ้างอิงโครงงานลิปบาล์ม</div>
+      <p>แหล่งข้อมูลสำหรับประกอบโครงงานวิทยาศาสตร์เรื่องลิปบาล์ม</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">คัดลอกลิงก์แล้ว ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
